@@ -1,0 +1,15 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geist' , sans-serif;
+}
+
+body {
+    background-color: #3c6e71;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
