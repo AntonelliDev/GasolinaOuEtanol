@@ -1,69 +1,37 @@
-# React + TypeScript + Vite
+# Comparador Gasolina x Etanol
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto simples desenvolvido em **React + TypeScript** que ajuda o usuário a decidir qual combustível está valendo mais a pena: **gasolina ou etanol**.  
 
-Currently, two official plugins are available:
+O funcionamento é direto:  
+- O usuário informa o preço atual da gasolina e do etanol.  
+- Ao clicar em **Calcular**, a aplicação analisa os valores e mostra qual combustível compensa mais abastecer.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O critério usado é a famosa regra dos 70%:  
+- Se o preço do etanol for **menor ou igual a 70%** do preço da gasolina → **Etanol é mais vantajoso**.  
+- Caso contrário → **Gasolina é mais vantajosa**.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias utilizadas
+- React  
+- TypeScript  
+- Vite
+- CSS puro
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Instalação e uso
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone o repositório e depois entre na pasta do projeto.  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instale as dependências usando `npm install` (ou `yarn install`, caso prefira).  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. Para rodar o projeto em modo de desenvolvimento, execute `npm run dev`. O servidor local será iniciado, geralmente em `http://localhost:5173`.  
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. Para gerar os arquivos de produção, use `npm run build`. O resultado final ficará na pasta `dist/`.  
+
+---
+
+## Licença
+Este projeto foi feito apenas para fins de estudo e prática.  
+Sinta-se livre para usar como quiser.
