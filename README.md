@@ -1,13 +1,13 @@
-# Comparador Gasolina x Etanol
+# Comparador Gasolina x Álcool
 
-Este é um projeto simples desenvolvido em **React + TypeScript** que ajuda o usuário a decidir qual combustível está valendo mais a pena: **gasolina ou etanol**.  
+Este é um projeto simples desenvolvido em **React + TypeScript** que ajuda o usuário a decidir qual combustível está valendo mais a pena: **gasolina ou álcool**.  
 
 O funcionamento é direto:  
-- O usuário informa o preço atual da gasolina e do etanol.  
+- O usuário informa o preço atual da gasolina e do álcool.  
 - Ao clicar em **Calcular**, a aplicação analisa os valores e mostra qual combustível compensa mais abastecer.  
 
 O critério usado é a famosa regra dos 70%:  
-- Se o preço do etanol for **menor ou igual a 70%** do preço da gasolina → **Etanol é mais vantajoso**.  
+- Se o preço do álcool for **menor ou igual a 70%** do preço da gasolina → **Álcool é mais vantajoso**.  
 - Caso contrário → **Gasolina é mais vantajosa**.  
 
 ---
